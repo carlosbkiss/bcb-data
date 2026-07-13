@@ -269,16 +269,19 @@ def get_ifdata_cartao(anomes_list: list[int]) -> pd.DataFrame:
             continue
         alvo["tier"] = alvo["NomeInstituicao"].apply(identificar_tier)
 
-        # Mapa código -> (nome, tier) usando CodInst E CodConglomeradoPrudencial
-        # como chave possível, cobrindo os dois cenários sem adivinhar qual
-        # dos dois o relatório de valores realmente usa.
+        # Mapa código -> (nome, tier) usando TODOS os campos de código que
+        # o cadastro tem como chave candidata (CodInst, os dois tipos de
+        # conglomerado, e o CNPJ da instituição líder) - depois de duas
+        # tentativas falhas com só 2 campos, testa todos de uma vez em vez
+        # de continuar adivinhando um por um.
+        campos_codigo_candidatos = ["CodInst", "CodConglomeradoPrudencial",
+                                     "CodConglomeradoFinanceiro", "CnpjInstituicaoLider"]
         mapa_codigo = {}
         for _, linha in alvo.iterrows():
             info = (linha["NomeInstituicao"], linha["tier"])
-            if pd.notna(linha.get("CodInst")):
-                mapa_codigo[str(linha["CodInst"])] = info
-            if "CodConglomeradoPrudencial" in alvo.columns and pd.notna(linha.get("CodConglomeradoPrudencial")):
-                mapa_codigo[str(linha["CodConglomeradoPrudencial"])] = info
+            for campo in campos_codigo_candidatos:
+                if campo in alvo.columns and pd.notna(linha.get(campo)):
+                    mapa_codigo[str(linha[campo])] = info
         codigos_alvo = list(mapa_codigo.keys())
 
         # Sintaxe correta confirmada no catálogo oficial do Bacen: function
@@ -311,12 +314,18 @@ def get_ifdata_cartao(anomes_list: list[int]) -> pd.DataFrame:
         intersecao = set(codigos_alvo) & codinst_no_relatorio
         dados = dados[dados["CodInst"].astype(str).isin(codigos_alvo)].copy()
         if dados.empty:
-            print(f"[aviso] {anomes}: cadastro achou {len(alvo)} instituição(ões) "
-                  f"(códigos tentados - CodInst e CodConglomeradoPrudencial: {codigos_alvo[:10]}...), "
-                  f"relatório {RELATORIO_CARTAO_PF} tem {len(codinst_no_relatorio)} CodInst único(s) "
-                  f"no total, interseção real: {intersecao or 'VAZIA'}. "
-                  f"Colunas completas do cadastro (não só as que a gente já usa): "
-                  f"{list(cadastro.columns)}")
+            # Já tentamos 4 campos de código diferentes e nada bateu.
+            # Em vez de continuar chutando campo por campo, despeja a
+            # linha crua COMPLETA de 3 instituições-alvo (todos os
+            # campos, não só os 4 que a gente tenta) pra comparar na mão
+            # com os CodInst que aparecem no relatório de valores.
+            amostra_bancos = alvo.head(3).to_dict("records")
+            amostra_relatorio = sorted(codinst_no_relatorio)[:5] + sorted(codinst_no_relatorio)[-5:]
+            print(f"[aviso] {anomes}: {len(codigos_alvo)} códigos tentados (4 campos x "
+                  f"{len(alvo)} instituições), interseção com os {len(codinst_no_relatorio)} "
+                  f"CodInst do relatório: VAZIA. Linha crua completa de 3 instituições-alvo: "
+                  f"{amostra_bancos}. Amostra de CodInst do relatório (5 menores + 5 maiores): "
+                  f"{amostra_relatorio}")
             continue
         dados["NomeInstituicao"] = dados["CodInst"].astype(str).map(lambda c: mapa_codigo[c][0])
         dados["tier"] = dados["CodInst"].astype(str).map(lambda c: mapa_codigo[c][1])
