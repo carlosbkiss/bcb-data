@@ -157,7 +157,7 @@ def identificar_tier(nome_instituicao: str) -> str:
 
 # Relatório 11 = Carteira de crédito ativa Pessoa Física - modalidade e
 # prazo de vencimento. É aqui que aparece a linha de "Cartão de Crédito"
-# por instituição. 
+# por instituição.
 RELATORIO_CARTAO_PF = "11"
 
 
@@ -250,15 +250,22 @@ def get_quarters(year: int, defasagem_dias: int = 75) -> list[int]:
 
 def normalizar_codigo(val) -> str:
     """
-    Garante que códigos de instituições sejam convertidos para string de forma limpa,
-    removendo sufixos '.0' que o Pandas adiciona ao interpretar colunas numéricas com NaNs.
+    Garante que códigos de instituições sejam convertidos para string de 8 dígitos.
+    Remove prefixos de texto (ex: 'C0080075' -> '00080075') e sufixos '.0' de floats.
     """
     if pd.isna(val):
         return ""
     s = str(val).strip()
     if s.endswith('.0'):
         s = s[:-2]
-    return s
+    
+    # Mantém apenas os caracteres numéricos (remove 'C', 'F', etc.)
+    s_numerico = "".join(filter(str.isdigit, s))
+    
+    # O padrão do Banco Central no relatório de valores (CodInst) é sempre de 8 dígitos
+    if s_numerico:
+        return s_numerico.zfill(8)
+    return ""
 
 
 def get_ifdata_cartao(anomes_list: list[int]) -> pd.DataFrame:
@@ -274,7 +281,7 @@ def get_ifdata_cartao(anomes_list: list[int]) -> pd.DataFrame:
         tipo_inst = 1 if anomes >= 202503 else 2
         print(f"\n[info] Processando período {anomes} utilizando TipoInstituicao={tipo_inst}")
 
-        # Chamamos o cadastro limpo, sem o parâmetro TipoInstituicao que o BC rejeita
+        # Chamamos o cadastro limpo, sem o parâmetro TipoInstituicao que o BC rejeita no OData
         registros_cadastro = _ifdata_get("IfDataCadastro", params={"AnoMes": anomes})
         cadastro = pd.DataFrame(registros_cadastro)
         if cadastro.empty:
@@ -313,14 +320,14 @@ def get_ifdata_cartao(anomes_list: list[int]) -> pd.DataFrame:
                   f"(TipoInstituicao={tipo_inst})")
             continue
 
-        # Normaliza a coluna CodInst antes de filtrar
+        # Normaliza a coluna CodInst antes de realizar a comparação
         dados["CodInst_limpo"] = dados["CodInst"].apply(normalizar_codigo)
         
-        # Filtra usando os códigos cadastrados normais
+        # Filtra os dados com base nos códigos normalizados mapeados
         dados_filtrados = dados[dados["CodInst_limpo"].isin(mapa_codigo.keys())].copy()
         
         if dados_filtrados.empty:
-            # Logs de depuração detalhados se falhar na interseção
+            # Despeja logs de depuração detalhados se falhar na interseção
             codinst_no_relatorio = set(dados["CodInst_limpo"].unique())
             amostra_bancos = alvo.head(3).to_dict("records")
             amostra_relatorio = sorted(codinst_no_relatorio)[:5] + sorted(codinst_no_relatorio)[-5:]
