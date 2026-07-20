@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-07-20T13:16:23.614768+00:00",
+  "updated_at": "2026-07-20T13:38:49.752166+00:00",
   "sgs": [
     {
       "key": "inadimplencia_total_sfn",
@@ -1264,885 +1264,2035 @@
   ],
   "ifdata": [
     {
-      "key": "bradesco_cart_o_de_cr_dito",
-      "label": "Bradesco · Cartão de Crédito PF",
+      "key": "bradesco_a_vencer_entre_1081_a_1800_dias",
+      "label": "Bradesco · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
       "unit": "R$ bi",
       "group": "Bradesco",
       "tier": "benchmark",
-      "modalidade": "Cartão de Crédito",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
+        0.27,
+        0.24,
+        0.24,
+        0.24,
+        0.24,
+        0.24,
+        0.26,
+        0.25
+      ]
+    },
+    {
+      "key": "bradesco_a_vencer_entre_1801_a_5400_dias",
+      "label": "Bradesco · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.04,
+        0.09,
+        0.08
+      ]
+    },
+    {
+      "key": "bradesco_a_vencer_entre_361_a_1080_dias",
+      "label": "Bradesco · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        1.89,
+        1.83,
+        1.8,
+        1.91,
+        1.91,
+        1.91,
+        1.98,
+        1.85
+      ]
+    },
+    {
+      "key": "bradesco_a_vencer_entre_91_a_360_dias",
+      "label": "Bradesco · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        17.62,
+        17.7,
+        17.7,
+        18.07,
+        18.07,
+        18.07,
+        19.72,
+        19.71
+      ]
+    },
+    {
+      "key": "bradesco_a_vencer_em_at_90_dias",
+      "label": "Bradesco · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        46.97,
+        44.61,
+        45.52,
+        45.84,
+        45.84,
+        45.84,
+        49.02,
+        48.21
+      ]
+    },
+    {
+      "key": "bradesco_a_vencer_acima_de_5400_dias",
+      "label": "Bradesco · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "bradesco_total",
+      "label": "Bradesco · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        75.63,
+        72.27,
+        73.25,
+        74.17,
+        74.17,
+        74.17,
+        79.25,
         78.69
       ]
     },
     {
-      "key": "bradesco_empr_stimo_com_consigna_o_em_folha",
-      "label": "Bradesco · Empréstimo com Consignação em Folha PF",
+      "key": "bradesco_vencido_a_partir_de_15_dias",
+      "label": "Bradesco · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
       "unit": "R$ bi",
       "group": "Bradesco",
       "tier": "benchmark",
-      "modalidade": "Empréstimo com Consignação em Folha",
+      "modalidade": "Vencido a Partir de 15 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        107.02
+        8.84,
+        7.86,
+        7.95,
+        8.09,
+        8.09,
+        8.09,
+        8.19,
+        8.58
       ]
     },
     {
-      "key": "bradesco_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Bradesco · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        49.24
-      ]
-    },
-    {
-      "key": "bradesco_habita_o",
-      "label": "Bradesco · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        108.28
-      ]
-    },
-    {
-      "key": "bradesco_outros_cr_ditos",
-      "label": "Bradesco · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        21.96
-      ]
-    },
-    {
-      "key": "bradesco_rural_e_agroindustrial",
-      "label": "Bradesco · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        36.44
-      ]
-    },
-    {
-      "key": "bradesco_ve_culos",
-      "label": "Bradesco · Veículos PF",
-      "unit": "R$ bi",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        46.25
-      ]
-    },
-    {
-      "key": "btg_cart_o_de_cr_dito",
-      "label": "BTG Pactual · Cartão de Crédito PF",
+      "key": "btg_a_vencer_entre_1081_a_1800_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
       "unit": "R$ bi",
       "group": "BTG Pactual",
       "tier": "benchmark",
-      "modalidade": "Cartão de Crédito",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
+        0.38,
+        0.44,
+        0.47,
+        0.48,
+        0.48,
+        0.48,
+        0.47,
+        0.46
+      ]
+    },
+    {
+      "key": "btg_a_vencer_entre_1801_a_5400_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.31,
+        0.37,
+        0.35,
+        0.31,
+        0.31,
+        0.31,
+        0.3,
+        0.28
+      ]
+    },
+    {
+      "key": "btg_a_vencer_entre_361_a_1080_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.37,
+        0.43,
+        0.47,
+        0.53,
+        0.53,
+        0.53,
+        0.61,
+        0.65
+      ]
+    },
+    {
+      "key": "btg_a_vencer_entre_91_a_360_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        2.46,
+        2.68,
+        2.91,
+        3.15,
+        3.15,
+        3.15,
+        3.63,
+        3.71
+      ]
+    },
+    {
+      "key": "btg_a_vencer_em_at_90_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        2.35,
+        2.18,
+        2.05,
+        2.02,
+        2.02,
+        2.02,
+        1.97,
+        1.87
+      ]
+    },
+    {
+      "key": "btg_a_vencer_acima_de_5400_dias",
+      "label": "BTG Pactual · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "btg_total",
+      "label": "BTG Pactual · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "BTG Pactual",
+      "tier": "benchmark",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        6.5,
+        7.09,
+        7.46,
+        7.82,
+        7.82,
+        7.82,
+        7.93,
         8.01
       ]
     },
     {
-      "key": "btg_empr_stimo_com_consigna_o_em_folha",
-      "label": "BTG Pactual · Empréstimo com Consignação em Folha PF",
+      "key": "btg_vencido_a_partir_de_15_dias",
+      "label": "BTG Pactual · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
       "unit": "R$ bi",
       "group": "BTG Pactual",
       "tier": "benchmark",
-      "modalidade": "Empréstimo com Consignação em Folha",
+      "modalidade": "Vencido a Partir de 15 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        22.46
+        0.64,
+        0.98,
+        1.21,
+        1.34,
+        1.34,
+        1.34,
+        0.94,
+        1.04
       ]
     },
     {
-      "key": "btg_empr_stimo_sem_consigna_o_em_folha",
-      "label": "BTG Pactual · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "BTG Pactual",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        6.56
-      ]
-    },
-    {
-      "key": "btg_habita_o",
-      "label": "BTG Pactual · Habitação PF",
-      "unit": "R$ bi",
-      "group": "BTG Pactual",
-      "tier": "benchmark",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.18
-      ]
-    },
-    {
-      "key": "btg_outros_cr_ditos",
-      "label": "BTG Pactual · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "BTG Pactual",
-      "tier": "benchmark",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        1.22
-      ]
-    },
-    {
-      "key": "btg_rural_e_agroindustrial",
-      "label": "BTG Pactual · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "BTG Pactual",
-      "tier": "benchmark",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.28
-      ]
-    },
-    {
-      "key": "btg_ve_culos",
-      "label": "BTG Pactual · Veículos PF",
-      "unit": "R$ bi",
-      "group": "BTG Pactual",
-      "tier": "benchmark",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        38.62
-      ]
-    },
-    {
-      "key": "c6_cart_o_de_cr_dito",
-      "label": "C6 Bank · Cartão de Crédito PF",
+      "key": "c6_a_vencer_entre_1081_a_1800_dias",
+      "label": "C6 Bank · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
       "unit": "R$ bi",
       "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Cartão de Crédito",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        12.19
-      ]
-    },
-    {
-      "key": "c6_empr_stimo_com_consigna_o_em_folha",
-      "label": "C6 Bank · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        40.82
-      ]
-    },
-    {
-      "key": "c6_empr_stimo_sem_consigna_o_em_folha",
-      "label": "C6 Bank · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        1.76
-      ]
-    },
-    {
-      "key": "c6_habita_o",
-      "label": "C6 Bank · Habitação PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "c6_outros_cr_ditos",
-      "label": "C6 Bank · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        1.48
-      ]
-    },
-    {
-      "key": "c6_rural_e_agroindustrial",
-      "label": "C6 Bank · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "c6_ve_culos",
-      "label": "C6 Bank · Veículos PF",
-      "unit": "R$ bi",
-      "group": "C6 Bank",
-      "tier": "concorrente",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        26.44
-      ]
-    },
-    {
-      "key": "inter_cart_o_de_cr_dito",
-      "label": "Inter · Cartão de Crédito PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Cartão de Crédito",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        14.72
-      ]
-    },
-    {
-      "key": "inter_empr_stimo_com_consigna_o_em_folha",
-      "label": "Inter · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        7.64
-      ]
-    },
-    {
-      "key": "inter_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Inter · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        4.68
-      ]
-    },
-    {
-      "key": "inter_habita_o",
-      "label": "Inter · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        9.14
-      ]
-    },
-    {
-      "key": "inter_outros_cr_ditos",
-      "label": "Inter · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        3.86
-      ]
-    },
-    {
-      "key": "inter_rural_e_agroindustrial",
-      "label": "Inter · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.07
-      ]
-    },
-    {
-      "key": "inter_ve_culos",
-      "label": "Inter · Veículos PF",
-      "unit": "R$ bi",
-      "group": "Inter",
-      "tier": "concorrente",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
+        0.06,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.05,
+        0.04,
         0.04
       ]
     },
     {
-      "key": "santander_cart_o_de_cr_dito",
-      "label": "Santander · Cartão de Crédito PF",
+      "key": "c6_a_vencer_entre_1801_a_5400_dias",
+      "label": "C6 Bank · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
       "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Cartão de Crédito",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        63.42
-      ]
-    },
-    {
-      "key": "santander_empr_stimo_com_consigna_o_em_folha",
-      "label": "Santander · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        57.98
-      ]
-    },
-    {
-      "key": "santander_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Santander · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        14.94
-      ]
-    },
-    {
-      "key": "santander_habita_o",
-      "label": "Santander · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        68.9
-      ]
-    },
-    {
-      "key": "santander_outros_cr_ditos",
-      "label": "Santander · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        28.58
-      ]
-    },
-    {
-      "key": "santander_rural_e_agroindustrial",
-      "label": "Santander · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        9.44
-      ]
-    },
-    {
-      "key": "santander_ve_culos",
-      "label": "Santander · Veículos PF",
-      "unit": "R$ bi",
-      "group": "Santander",
-      "tier": "benchmark",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        82.38
-      ]
-    },
-    {
-      "key": "bv_cart_o_de_cr_dito",
-      "label": "BV · Cartão de Crédito PF",
-      "unit": "R$ bi",
-      "group": "BV",
+      "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Cartão de Crédito",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        5.28
-      ]
-    },
-    {
-      "key": "bv_empr_stimo_com_consigna_o_em_folha",
-      "label": "BV · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "BV",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.28
-      ]
-    },
-    {
-      "key": "bv_empr_stimo_sem_consigna_o_em_folha",
-      "label": "BV · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "BV",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        8.71
-      ]
-    },
-    {
-      "key": "bv_habita_o",
-      "label": "BV · Habitação PF",
-      "unit": "R$ bi",
-      "group": "BV",
-      "tier": "concorrente",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.01,
+        0.0,
         0.0
       ]
     },
     {
-      "key": "bv_outros_cr_ditos",
-      "label": "BV · Outros Créditos PF",
+      "key": "c6_a_vencer_entre_361_a_1080_dias",
+      "label": "C6 Bank · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
       "unit": "R$ bi",
-      "group": "BV",
+      "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Outros Créditos",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        0.02
+        0.19,
+        0.2,
+        0.2,
+        0.21,
+        0.21,
+        0.21,
+        0.22,
+        0.21
       ]
     },
     {
-      "key": "bv_rural_e_agroindustrial",
-      "label": "BV · Rural e Agroindustrial PF",
+      "key": "c6_a_vencer_entre_91_a_360_dias",
+      "label": "C6 Bank · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
       "unit": "R$ bi",
-      "group": "BV",
+      "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Rural e Agroindustrial",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
+        2.75,
+        2.79,
+        2.79,
+        2.9,
+        2.9,
+        2.9,
+        3.31,
+        3.36
+      ]
+    },
+    {
+      "key": "c6_a_vencer_em_at_90_dias",
+      "label": "C6 Bank · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "C6 Bank",
+      "tier": "concorrente",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        6.36,
+        6.37,
+        6.55,
+        6.84,
+        6.84,
+        6.84,
+        7.61,
+        7.6
+      ]
+    },
+    {
+      "key": "c6_a_vencer_acima_de_5400_dias",
+      "label": "C6 Bank · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "C6 Bank",
+      "tier": "concorrente",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0
       ]
     },
     {
-      "key": "bv_ve_culos",
-      "label": "BV · Veículos PF",
+      "key": "c6_total",
+      "label": "C6 Bank · Cartão de Crédito · Total PF",
       "unit": "R$ bi",
-      "group": "BV",
+      "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Veículos",
+      "modalidade": "Total",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        55.9
+        10.13,
+        10.3,
+        10.61,
+        10.97,
+        10.97,
+        10.97,
+        12.13,
+        12.19
       ]
     },
     {
-      "key": "itau_cart_o_de_cr_dito",
-      "label": "Itaú · Cartão de Crédito PF",
+      "key": "c6_vencido_a_partir_de_15_dias",
+      "label": "C6 Bank · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
       "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Cartão de Crédito",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        151.11
-      ]
-    },
-    {
-      "key": "itau_empr_stimo_com_consigna_o_em_folha",
-      "label": "Itaú · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        78.6
-      ]
-    },
-    {
-      "key": "itau_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Itaú · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        31.31
-      ]
-    },
-    {
-      "key": "itau_habita_o",
-      "label": "Itaú · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        146.12
-      ]
-    },
-    {
-      "key": "itau_outros_cr_ditos",
-      "label": "Itaú · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        40.72
-      ]
-    },
-    {
-      "key": "itau_rural_e_agroindustrial",
-      "label": "Itaú · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        7.49
-      ]
-    },
-    {
-      "key": "itau_ve_culos",
-      "label": "Itaú · Veículos PF",
-      "unit": "R$ bi",
-      "group": "Itaú",
-      "tier": "benchmark",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        35.91
-      ]
-    },
-    {
-      "key": "nubank_cart_o_de_cr_dito",
-      "label": "Nubank · Cartão de Crédito PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Cartão de Crédito",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        115.96
-      ]
-    },
-    {
-      "key": "nubank_empr_stimo_com_consigna_o_em_folha",
-      "label": "Nubank · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        4.99
-      ]
-    },
-    {
-      "key": "nubank_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Nubank · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        61.78
-      ]
-    },
-    {
-      "key": "nubank_habita_o",
-      "label": "Nubank · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "nubank_outros_cr_ditos",
-      "label": "Nubank · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.68
-      ]
-    },
-    {
-      "key": "nubank_rural_e_agroindustrial",
-      "label": "Nubank · Rural e Agroindustrial PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Rural e Agroindustrial",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "nubank_ve_culos",
-      "label": "Nubank · Veículos PF",
-      "unit": "R$ bi",
-      "group": "Nubank",
-      "tier": "benchmark",
-      "modalidade": "Veículos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "porto_cart_o_de_cr_dito",
-      "label": "Porto · Cartão de Crédito PF",
-      "unit": "R$ bi",
-      "group": "Porto",
+      "group": "C6 Bank",
       "tier": "concorrente",
-      "modalidade": "Cartão de Crédito",
+      "modalidade": "Vencido a Partir de 15 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        19.68
-      ]
-    },
-    {
-      "key": "porto_empr_stimo_com_consigna_o_em_folha",
-      "label": "Porto · Empréstimo com Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Porto",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo com Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.1
-      ]
-    },
-    {
-      "key": "porto_empr_stimo_sem_consigna_o_em_folha",
-      "label": "Porto · Empréstimo sem Consignação em Folha PF",
-      "unit": "R$ bi",
-      "group": "Porto",
-      "tier": "concorrente",
-      "modalidade": "Empréstimo sem Consignação em Folha",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.32
-      ]
-    },
-    {
-      "key": "porto_habita_o",
-      "label": "Porto · Habitação PF",
-      "unit": "R$ bi",
-      "group": "Porto",
-      "tier": "concorrente",
-      "modalidade": "Habitação",
-      "dates": [
-        "202603"
-      ],
-      "values": [
-        0.0
-      ]
-    },
-    {
-      "key": "porto_outros_cr_ditos",
-      "label": "Porto · Outros Créditos PF",
-      "unit": "R$ bi",
-      "group": "Porto",
-      "tier": "concorrente",
-      "modalidade": "Outros Créditos",
-      "dates": [
-        "202603"
-      ],
-      "values": [
+        0.76,
+        0.88,
+        1.01,
+        0.96,
+        0.96,
+        0.96,
+        0.94,
         0.98
       ]
     },
     {
-      "key": "porto_rural_e_agroindustrial",
-      "label": "Porto · Rural e Agroindustrial PF",
+      "key": "inter_a_vencer_entre_1081_a_1800_dias",
+      "label": "Inter · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
       "unit": "R$ bi",
-      "group": "Porto",
+      "group": "Inter",
       "tier": "concorrente",
-      "modalidade": "Rural e Agroindustrial",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
+        0.0,
+        0.01,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
         0.0
       ]
     },
     {
-      "key": "porto_ve_culos",
-      "label": "Porto · Veículos PF",
+      "key": "inter_a_vencer_entre_1801_a_5400_dias",
+      "label": "Inter · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
       "unit": "R$ bi",
-      "group": "Porto",
+      "group": "Inter",
       "tier": "concorrente",
-      "modalidade": "Veículos",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
       "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
         "202603"
       ],
       "values": [
-        0.74
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "inter_a_vencer_entre_361_a_1080_dias",
+      "label": "Inter · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.05,
+        0.06,
+        0.09,
+        0.1,
+        0.1,
+        0.1,
+        0.11,
+        0.12
+      ]
+    },
+    {
+      "key": "inter_a_vencer_entre_91_a_360_dias",
+      "label": "Inter · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        2.19,
+        2.31,
+        2.47,
+        2.58,
+        2.58,
+        2.58,
+        2.94,
+        2.96
+      ]
+    },
+    {
+      "key": "inter_a_vencer_em_at_90_dias",
+      "label": "Inter · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        7.59,
+        7.83,
+        8.34,
+        9.03,
+        9.03,
+        9.03,
+        9.75,
+        9.76
+      ]
+    },
+    {
+      "key": "inter_a_vencer_acima_de_5400_dias",
+      "label": "Inter · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "inter_total",
+      "label": "Inter · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        11.09,
+        11.49,
+        12.23,
+        13.17,
+        13.17,
+        13.17,
+        14.44,
+        14.72
+      ]
+    },
+    {
+      "key": "inter_vencido_a_partir_de_15_dias",
+      "label": "Inter · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "Inter",
+      "tier": "concorrente",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        1.26,
+        1.28,
+        1.32,
+        1.46,
+        1.46,
+        1.46,
+        1.63,
+        1.87
+      ]
+    },
+    {
+      "key": "santander_a_vencer_entre_1081_a_1800_dias",
+      "label": "Santander · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.63,
+        0.64,
+        0.61,
+        0.64,
+        0.64,
+        0.64,
+        0.67,
+        0.65
+      ]
+    },
+    {
+      "key": "santander_a_vencer_entre_1801_a_5400_dias",
+      "label": "Santander · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.64,
+        0.66,
+        0.62,
+        0.64,
+        0.64,
+        0.64,
+        0.61,
+        0.51
+      ]
+    },
+    {
+      "key": "santander_a_vencer_entre_361_a_1080_dias",
+      "label": "Santander · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        1.98,
+        1.99,
+        1.92,
+        1.98,
+        1.98,
+        1.98,
+        2.23,
+        2.18
+      ]
+    },
+    {
+      "key": "santander_a_vencer_entre_91_a_360_dias",
+      "label": "Santander · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        16.08,
+        16.02,
+        16.05,
+        16.93,
+        16.93,
+        16.93,
+        18.66,
+        18.7
+      ]
+    },
+    {
+      "key": "santander_a_vencer_em_at_90_dias",
+      "label": "Santander · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        36.17,
+        36.14,
+        36.65,
+        37.1,
+        37.1,
+        37.1,
+        39.86,
+        38.01
+      ]
+    },
+    {
+      "key": "santander_a_vencer_acima_de_5400_dias",
+      "label": "Santander · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "santander_total",
+      "label": "Santander · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        58.97,
+        59.35,
+        58.93,
+        61.01,
+        61.01,
+        61.01,
+        66.48,
+        63.42
+      ]
+    },
+    {
+      "key": "santander_vencido_a_partir_de_15_dias",
+      "label": "Santander · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "Santander",
+      "tier": "benchmark",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        3.47,
+        3.9,
+        3.08,
+        3.72,
+        3.72,
+        3.72,
+        4.44,
+        3.37
+      ]
+    },
+    {
+      "key": "bv_a_vencer_entre_1081_a_1800_dias",
+      "label": "BV · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "bv_a_vencer_entre_1801_a_5400_dias",
+      "label": "BV · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "bv_a_vencer_entre_361_a_1080_dias",
+      "label": "BV · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.12,
+        0.11,
+        0.11,
+        0.11,
+        0.11,
+        0.11,
+        0.11,
+        0.1
+      ]
+    },
+    {
+      "key": "bv_a_vencer_entre_91_a_360_dias",
+      "label": "BV · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        1.28,
+        1.33,
+        1.32,
+        1.32,
+        1.32,
+        1.32,
+        1.43,
+        1.39
+      ]
+    },
+    {
+      "key": "bv_a_vencer_em_at_90_dias",
+      "label": "BV · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        2.45,
+        2.56,
+        2.64,
+        2.61,
+        2.61,
+        2.61,
+        2.69,
+        2.57
+      ]
+    },
+    {
+      "key": "bv_a_vencer_acima_de_5400_dias",
+      "label": "BV · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "bv_total",
+      "label": "BV · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        4.55,
+        4.73,
+        4.81,
+        4.83,
+        4.83,
+        4.83,
+        5.22,
+        5.28
+      ]
+    },
+    {
+      "key": "bv_vencido_a_partir_de_15_dias",
+      "label": "BV · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "BV",
+      "tier": "concorrente",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.7,
+        0.73,
+        0.75,
+        0.79,
+        0.79,
+        0.79,
+        1.0,
+        1.23
+      ]
+    },
+    {
+      "key": "itau_a_vencer_entre_1081_a_1800_dias",
+      "label": "Itaú · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.07,
+        0.05,
+        0.04,
+        0.03,
+        0.03,
+        0.03,
+        0.02,
+        0.02
+      ]
+    },
+    {
+      "key": "itau_a_vencer_entre_1801_a_5400_dias",
+      "label": "Itaú · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.19,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "itau_a_vencer_entre_361_a_1080_dias",
+      "label": "Itaú · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        2.13,
+        1.72,
+        1.52,
+        1.51,
+        1.51,
+        1.51,
+        1.98,
+        1.94
+      ]
+    },
+    {
+      "key": "itau_a_vencer_entre_91_a_360_dias",
+      "label": "Itaú · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        45.72,
+        41.2,
+        40.93,
+        41.55,
+        41.55,
+        41.55,
+        45.59,
+        45.14
+      ]
+    },
+    {
+      "key": "itau_a_vencer_em_at_90_dias",
+      "label": "Itaú · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        96.31,
+        87.0,
+        89.3,
+        89.78,
+        89.78,
+        89.78,
+        96.19,
+        93.34
+      ]
+    },
+    {
+      "key": "itau_a_vencer_acima_de_5400_dias",
+      "label": "Itaú · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.47,
+        0.35,
+        0.3,
+        0.29,
+        0.29,
+        0.29,
+        0.29,
+        0.28
+      ]
+    },
+    {
+      "key": "itau_total",
+      "label": "Itaú · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        154.81,
+        139.87,
+        142.0,
+        143.08,
+        143.08,
+        143.08,
+        154.45,
+        151.11
+      ]
+    },
+    {
+      "key": "itau_vencido_a_partir_de_15_dias",
+      "label": "Itaú · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        9.92,
+        9.56,
+        9.9,
+        9.92,
+        9.92,
+        9.92,
+        10.37,
+        10.39
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_entre_1081_a_1800_dias",
+      "label": "Nubank · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_entre_1801_a_5400_dias",
+      "label": "Nubank · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_entre_361_a_1080_dias",
+      "label": "Nubank · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.04,
+        0.28,
+        0.33,
+        0.34,
+        0.35,
+        0.35,
+        0.35,
+        0.38,
+        0.43
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_entre_91_a_360_dias",
+      "label": "Nubank · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        13.9,
+        3.18,
+        17.81,
+        19.05,
+        20.62,
+        20.62,
+        20.62,
+        24.57,
+        27.82
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_em_at_90_dias",
+      "label": "Nubank · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        41.2,
+        14.58,
+        56.88,
+        60.33,
+        64.23,
+        64.23,
+        64.23,
+        70.65,
+        71.94
+      ]
+    },
+    {
+      "key": "nubank_a_vencer_acima_de_5400_dias",
+      "label": "Nubank · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "nubank_total",
+      "label": "Nubank · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        55.14,
+        25.84,
+        85.2,
+        92.19,
+        98.64,
+        98.64,
+        98.64,
+        109.89,
+        115.96
+      ]
+    },
+    {
+      "key": "nubank_vencido_a_partir_de_15_dias",
+      "label": "Nubank · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        7.79,
+        10.18,
+        12.48,
+        13.44,
+        13.44,
+        13.44,
+        14.29,
+        15.77
+      ]
+    },
+    {
+      "key": "porto_a_vencer_entre_1081_a_1800_dias",
+      "label": "Porto · Cartão de Crédito · A Vencer Entre 1081 a 1800 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 1081 a 1800 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.17,
+        0.16,
+        0.17,
+        0.2,
+        0.2,
+        0.2,
+        0.23,
+        0.14
+      ]
+    },
+    {
+      "key": "porto_a_vencer_entre_1801_a_5400_dias",
+      "label": "Porto · Cartão de Crédito · A Vencer Entre 1801 a 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 1801 a 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "porto_a_vencer_entre_361_a_1080_dias",
+      "label": "Porto · Cartão de Crédito · A Vencer Entre 361 a 1080 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 361 a 1080 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.7,
+        0.74,
+        0.83,
+        0.93,
+        0.93,
+        0.93,
+        0.97,
+        0.63
+      ]
+    },
+    {
+      "key": "porto_a_vencer_entre_91_a_360_dias",
+      "label": "Porto · Cartão de Crédito · A Vencer Entre 91 a 360 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A Vencer Entre 91 a 360 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        5.38,
+        5.6,
+        5.71,
+        5.89,
+        5.89,
+        5.89,
+        6.45,
+        6.2
+      ]
+    },
+    {
+      "key": "porto_a_vencer_em_at_90_dias",
+      "label": "Porto · Cartão de Crédito · A Vencer em até 90 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A Vencer em até 90 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        8.85,
+        9.09,
+        9.34,
+        9.54,
+        9.54,
+        9.54,
+        10.25,
+        9.99
+      ]
+    },
+    {
+      "key": "porto_a_vencer_acima_de_5400_dias",
+      "label": "Porto · Cartão de Crédito · A vencer Acima de 5400 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "A vencer Acima de 5400 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "key": "porto_total",
+      "label": "Porto · Cartão de Crédito · Total PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "Total",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        16.18,
+        17.15,
+        18.0,
+        18.71,
+        18.71,
+        18.71,
+        20.29,
+        19.68
+      ]
+    },
+    {
+      "key": "porto_vencido_a_partir_de_15_dias",
+      "label": "Porto · Cartão de Crédito · Vencido a Partir de 15 Dias PF",
+      "unit": "R$ bi",
+      "group": "Porto",
+      "tier": "concorrente",
+      "modalidade": "Vencido a Partir de 15 Dias",
+      "dates": [
+        "202412",
+        "202503",
+        "202506",
+        "202509",
+        "202509",
+        "202509",
+        "202512",
+        "202603"
+      ],
+      "values": [
+        1.09,
+        1.56,
+        1.95,
+        2.15,
+        2.15,
+        2.15,
+        2.39,
+        2.71
       ]
     }
   ],
@@ -2153,6 +3303,7 @@
       "unit": "pontos",
       "group": "C6 Bank",
       "tier": "concorrente",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2175,6 +3326,7 @@
       "unit": "pontos",
       "group": "Bradesco",
       "tier": "benchmark",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2199,6 +3351,7 @@
       "unit": "pontos",
       "group": "BTG Pactual / Banco Pan",
       "tier": "conglomerado",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2223,6 +3376,7 @@
       "unit": "pontos",
       "group": "PICPAY (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2247,6 +3401,7 @@
       "unit": "pontos",
       "group": "Inter",
       "tier": "concorrente",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2271,6 +3426,7 @@
       "unit": "pontos",
       "group": "Santander",
       "tier": "benchmark",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2295,6 +3451,7 @@
       "unit": "pontos",
       "group": "Itaú",
       "tier": "benchmark",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2319,6 +3476,7 @@
       "unit": "pontos",
       "group": "NEON PAGAMENTOS IP (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2341,6 +3499,7 @@
       "unit": "pontos",
       "group": "MERCADO PAGO IP (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2363,6 +3522,7 @@
       "unit": "pontos",
       "group": "PAGSEGURO (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2385,6 +3545,7 @@
       "unit": "pontos",
       "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2409,6 +3570,7 @@
       "unit": "pontos",
       "group": "BB (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2433,6 +3595,7 @@
       "unit": "pontos",
       "group": "Nubank",
       "tier": "benchmark",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2455,6 +3618,7 @@
       "unit": "pontos",
       "group": "99PAY IP (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2477,6 +3641,7 @@
       "unit": "pontos",
       "group": "CLOUDWALK IP (conglomerado)",
       "tier": "mercado",
+      "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
@@ -2499,6 +3664,7 @@
       "unit": "pontos",
       "group": "Porto",
       "tier": "concorrente",
+      "metrica": "índice",
       "dates": [
         "4Q24",
         "1Q25",
@@ -2514,6 +3680,393 @@
         108.22,
         139.2,
         150.52
+      ],
+      "rank": 37,
+      "destaque": true
+    },
+    {
+      "key": "c6_volume",
+      "label": "C6 Bank · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "C6 Bank",
+      "tier": "concorrente",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        1858,
+        1562,
+        1726,
+        1738,
+        1898
+      ],
+      "rank": 1
+    },
+    {
+      "key": "bradesco_volume",
+      "label": "Bradesco · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        3917,
+        7647,
+        6672,
+        5718,
+        4849,
+        5398
+      ],
+      "rank": 2
+    },
+    {
+      "key": "btg+pan_volume",
+      "label": "BTG Pactual / Banco Pan · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "BTG Pactual / Banco Pan",
+      "tier": "conglomerado",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        932,
+        1001,
+        967,
+        857,
+        901,
+        1173
+      ],
+      "rank": 3
+    },
+    {
+      "key": "picpay_conglomerado_volume",
+      "label": "PICPAY (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "PICPAY (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        1748,
+        2265,
+        2610,
+        3286,
+        3718,
+        2563
+      ],
+      "rank": 4
+    },
+    {
+      "key": "inter_volume",
+      "label": "Inter · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Inter",
+      "tier": "concorrente",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        2634,
+        2272,
+        3239,
+        3862,
+        1647,
+        1506
+      ],
+      "rank": 5
+    },
+    {
+      "key": "santander_volume",
+      "label": "Santander · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Santander",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        2317,
+        2556,
+        2063,
+        2038,
+        1929,
+        2471
+      ],
+      "rank": 6
+    },
+    {
+      "key": "itau_volume",
+      "label": "Itaú · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Itaú",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        4066,
+        3384,
+        3933,
+        4525,
+        3636,
+        3442
+      ],
+      "rank": 7
+    },
+    {
+      "key": "neon_pagamentos_ip_conglomerado_volume",
+      "label": "NEON PAGAMENTOS IP (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "NEON PAGAMENTOS IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        703,
+        837,
+        903,
+        1031,
+        817
+      ],
+      "rank": 8
+    },
+    {
+      "key": "mercado_pago_ip_conglomerado_volume",
+      "label": "MERCADO PAGO IP (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "MERCADO PAGO IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        2309,
+        3396,
+        3414,
+        2661,
+        2157
+      ],
+      "rank": 9
+    },
+    {
+      "key": "pagseguro_conglomerado_volume",
+      "label": "PAGSEGURO (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "PAGSEGURO (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        1885,
+        1602,
+        1595,
+        1090,
+        944
+      ],
+      "rank": 10
+    },
+    {
+      "key": "caixa_econ_mica_federal_conglomerado_volume",
+      "label": "CAIXA ECONÔMICA FEDERAL (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        3289,
+        3546,
+        3894,
+        4075,
+        2724,
+        3659
+      ],
+      "rank": 11
+    },
+    {
+      "key": "bb_conglomerado_volume",
+      "label": "BB (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "BB (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        1419,
+        1617,
+        1776,
+        2091,
+        1330,
+        1608
+      ],
+      "rank": 12
+    },
+    {
+      "key": "nubank_volume",
+      "label": "Nubank · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Nubank",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        1100,
+        1381,
+        1386,
+        1350,
+        1223
+      ],
+      "rank": 13
+    },
+    {
+      "key": "99pay_ip_conglomerado_volume",
+      "label": "99PAY IP (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "99PAY IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        759,
+        540,
+        453,
+        418,
+        260
+      ],
+      "rank": 14
+    },
+    {
+      "key": "cloudwalk_ip_conglomerado_volume",
+      "label": "CLOUDWALK IP (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "CLOUDWALK IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        65,
+        97,
+        135,
+        102,
+        121
+      ],
+      "rank": 15
+    },
+    {
+      "key": "porto_volume",
+      "label": "Porto · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Porto",
+      "tier": "concorrente",
+      "metrica": "volume",
+      "dates": [
+        "4Q24",
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26"
+      ],
+      "values": [
+        285,
+        353,
+        442,
+        355,
+        472,
+        529
       ],
       "rank": 37,
       "destaque": true
