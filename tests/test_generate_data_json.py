@@ -239,6 +239,32 @@ def test_ranking_de_reclamacoes_vazio_devolve_listas_vazias(monkeypatch):
     assert periodos_ok == []
 
 
+def test_diagnostico_de_banco_sem_dado_sugere_candidatos_por_palavra_solta(monkeypatch, capsys):
+    # Bug real investigado: "bv" nunca aparece no ranking de reclamações
+    # baixado em produção, e não dá pra saber (só olhando o aviso genérico)
+    # se é porque o banco realmente não tem entrada nesse trimestre ou se o
+    # nome configurado em BANCOS_ALVO não bate com o nome real do arquivo.
+    # O diagnóstico deve procurar candidatos por palavra solta (sem
+    # fronteira de palavra) pra dar uma pista, mesmo quando o match "de
+    # verdade" (identificar_bancos_alvo) não achou nada.
+    linhas = [
+        _linha("PORTO SEGURO", "1", "1,00", "1.000.000", "40"),
+        # Não bate com nenhum termo de BANCOS_ALVO (nem "BANCO VOTORANTIM"
+        # nem "BV FINANCEIRA" nem a palavra isolada "BV") mas compartilha a
+        # palavra "VOTORANTIM" - deve aparecer como candidato solto.
+        _linha("XYZ HOLDING VOTORANTIM PARTICIPACOES S.A.", "9", "5,00", "500.000", "50"),
+    ]
+    df = pd.DataFrame(linhas)
+    monkeypatch.setattr(g, "get_ranking_reclamacoes_cartao", lambda periodos: df)
+
+    g.build_reclamacoes_block([(2026, 1)])
+    saida = capsys.readouterr().out
+
+    assert "'bv'" in saida
+    assert "VOTORANTIM" in saida
+    assert "XYZ HOLDING VOTORANTIM PARTICIPACOES S.A." in saida
+
+
 # ---------------------------------------------------------------------------
 # Janelas de período (histórico)
 # ---------------------------------------------------------------------------
