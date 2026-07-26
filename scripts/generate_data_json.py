@@ -25,6 +25,7 @@ from bacen_cartao_pipeline import (
     SGS_SERIES_CARTAO,
     BANCOS_ALVO,
     identificar_bancos_alvo,
+    _termos_de,
 )
 
 OUT_PATH = Path(__file__).parent.parent / "docs" / "data.json"
@@ -396,6 +397,29 @@ def build_reclamacoes_block(periodos, top_n: int = TOP_N_RECLAMACOES):
               f"{periodos}: {bancos_sem_dado} - confira se o nome oficial no arquivo do Bacen bate "
               f"com os termos em BANCOS_ALVO (rode listar_instituicoes_alvo() ou inspecione "
               f"df[col_instituicao].unique() pra achar o nome certo).")
+
+        # Diagnóstico: pra cada banco-alvo sem nenhum match, procura no
+        # arquivo bruto (busca solta, SEM fronteira de palavra - é só pra
+        # achar candidatos, não decide nada sozinho) por nomes que contêm
+        # alguma palavra significativa (>=4 letras) dos termos configurados
+        # em BANCOS_ALVO, ou o termo curto inteiro se ele for bem curto. Sem
+        # isso, "não achou" não diz se o banco realmente não apareceu no
+        # ranking (poucas reclamações) ou se o nome no arquivo é diferente
+        # do que está configurado.
+        nomes_unicos = sorted(df[col_instituicao].dropna().astype(str).unique())
+        for banco in bancos_sem_dado:
+            termos_busca = _termos_de(BANCOS_ALVO[banco], incluir_curtos=True)
+            raizes = sorted({
+                palavra for termo in termos_busca for palavra in termo.upper().split()
+                if len(palavra) >= 4
+            } | {termo.upper() for termo in termos_busca if len(termo) <= 3})
+            candidatos = sorted({n for n in nomes_unicos if any(r in n.upper() for r in raizes)})
+            candidatos_fmt = candidatos[:20] if candidatos else (
+                "(nenhum - banco pode genuinamente não ter aparecido no ranking, ou os termos "
+                "configurados não têm nada em comum com o nome real)"
+            )
+            print(f"[aviso]   '{banco}': candidatos parecidos no arquivo bruto (busca solta por "
+                  f"{raizes}, conferir manualmente): {candidatos_fmt}")
 
     print(f"[sucesso] Top {top_n} (oficial: mais clientes, ordenado por índice):")
     for b in top:
