@@ -157,6 +157,27 @@ def test_porto_ja_no_top15_por_porte_nao_duplica(monkeypatch):
     assert porto["destaque"] is True
 
 
+def test_bv_bate_no_ranking_de_reclamacoes_via_nome_agregado(monkeypatch):
+    # Regressão do bug real: o BV nunca aparecia no Ranking de Reclamações
+    # porque lá é publicado como "VOTORANTIM (conglomerado)" (achado via
+    # diagnóstico rodado em produção), não "BANCO VOTORANTIM"/"BV
+    # FINANCEIRA"/"BV" isolado, que são os únicos termos que já batiam.
+    linhas = [
+        _linha("PORTO SEGURO", "1", "1,00", "1.000.000", "40"),
+        _linha("VOTORANTIM (conglomerado)", "9", "5,00", "500.000", "50"),
+    ]
+    df = pd.DataFrame(linhas)
+    monkeypatch.setattr(g, "get_ranking_reclamacoes_cartao", lambda periodos: df)
+
+    blocks, _ = g.build_reclamacoes_block([(2026, 1)])
+    indice_blocks = [b for b in blocks if b["metrica"] == "índice"]
+
+    assert any(b["key"] == "bv" for b in indice_blocks)
+    bv = next(b for b in indice_blocks if b["key"] == "bv")
+    assert bv["group"] == "BV"
+    assert bv["tier"] == "concorrente"
+
+
 def test_dedup_por_cnpj_funde_grafias_diferentes_do_mesmo_banco(monkeypatch):
     # Bug real: o Bacen mudou o nome de exibição do C6 entre trimestres -
     # sem agrupar por CNPJ, isso virava duas séries fragmentadas em vez de
@@ -240,19 +261,18 @@ def test_ranking_de_reclamacoes_vazio_devolve_listas_vazias(monkeypatch):
 
 
 def test_diagnostico_de_banco_sem_dado_sugere_candidatos_por_palavra_solta(monkeypatch, capsys):
-    # Bug real investigado: "bv" nunca aparece no ranking de reclamações
-    # baixado em produção, e não dá pra saber (só olhando o aviso genérico)
-    # se é porque o banco realmente não tem entrada nesse trimestre ou se o
-    # nome configurado em BANCOS_ALVO não bate com o nome real do arquivo.
-    # O diagnóstico deve procurar candidatos por palavra solta (sem
-    # fronteira de palavra) pra dar uma pista, mesmo quando o match "de
-    # verdade" (identificar_bancos_alvo) não achou nada.
+    # Mesmo padrão do bug real do "bv" (ele nunca aparecia no ranking de
+    # reclamações porque lá é publicado como "VOTORANTIM (conglomerado)",
+    # sem bater em nenhum termo configurado) - já corrigido adicionando
+    # "VOTORANTIM" aos termos curtos do bv. Esse teste usa "btg" pra manter
+    # a cobertura do mecanismo de diagnóstico em si (candidato por palavra
+    # solta, sem fronteira de palavra) com um caso que continua sem match.
     linhas = [
         _linha("PORTO SEGURO", "1", "1,00", "1.000.000", "40"),
-        # Não bate com nenhum termo de BANCOS_ALVO (nem "BANCO VOTORANTIM"
-        # nem "BV FINANCEIRA" nem a palavra isolada "BV") mas compartilha a
-        # palavra "VOTORANTIM" - deve aparecer como candidato solto.
-        _linha("XYZ HOLDING VOTORANTIM PARTICIPACOES S.A.", "9", "5,00", "500.000", "50"),
+        # Não bate com o termo configurado ("BTG PACTUAL") porque falta o
+        # "BTG", mas compartilha a palavra "PACTUAL" - deve aparecer como
+        # candidato solto mesmo sem ser um match de verdade.
+        _linha("HOLDING PACTUAL PARTICIPACOES S.A.", "9", "5,00", "500.000", "50"),
     ]
     df = pd.DataFrame(linhas)
     monkeypatch.setattr(g, "get_ranking_reclamacoes_cartao", lambda periodos: df)
@@ -260,9 +280,9 @@ def test_diagnostico_de_banco_sem_dado_sugere_candidatos_por_palavra_solta(monke
     g.build_reclamacoes_block([(2026, 1)])
     saida = capsys.readouterr().out
 
-    assert "'bv'" in saida
-    assert "VOTORANTIM" in saida
-    assert "XYZ HOLDING VOTORANTIM PARTICIPACOES S.A." in saida
+    assert "'btg'" in saida
+    assert "PACTUAL" in saida
+    assert "HOLDING PACTUAL PARTICIPACOES S.A." in saida
 
 
 # ---------------------------------------------------------------------------

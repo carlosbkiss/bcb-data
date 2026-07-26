@@ -127,7 +127,14 @@ def _parece_subsidiaria(nome: str) -> bool:
 BANCOS_ALVO = {
     "porto":     {"termos": ["PORTO SEGURO", "PORTO BANK"], "tier": "concorrente"},
     "pan":       {"termos": ["BANCO PAN"], "tier": "concorrente"},
-    "bv":        {"termos": ["BANCO VOTORANTIM", "BV FINANCEIRA"], "termos_curtos": ["BV"], "tier": "concorrente"},
+    # "VOTORANTIM" isolado só entra em termos_curtos (não em "termos"): no
+    # Ranking de Reclamações o BV aparece agregado como "VOTORANTIM
+    # (conglomerado)" (mesmo padrão de "BANCO C6 (conglomerado)"), sem
+    # "BANCO" nem "BV" no nome - achado via diagnóstico real (banco ficava
+    # sem nenhuma entrada nos 6 trimestres já rastreados). No IF.data (que
+    # usa incluir_curtos=False) continua batendo só via "BANCO VOTORANTIM"/
+    # "BV FINANCEIRA", que já funcionava.
+    "bv":        {"termos": ["BANCO VOTORANTIM", "BV FINANCEIRA"], "termos_curtos": ["BV", "VOTORANTIM"], "tier": "concorrente"},
     "inter":     {"termos": ["BANCO INTER"], "termos_curtos": ["INTER"], "tier": "concorrente"},
     "c6":        {"termos": ["C6 BANK", "BANCO C6"], "tier": "concorrente"},
     "itau":      {"termos": ["ITAÚ UNIBANCO", "ITAU UNIBANCO"], "termos_curtos": ["ITAÚ", "ITAU"], "tier": "benchmark"},
