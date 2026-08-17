@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-08-10T12:50:07.329239+00:00",
+  "updated_at": "2026-08-17T12:27:15.021008+00:00",
   "sgs": [
     {
       "key": "inadimplencia_total_sfn",
@@ -3046,6 +3046,31 @@
   ],
   "reclamacoes": [
     {
+      "key": "bradesco",
+      "label": "Bradesco · índice de reclamações",
+      "unit": "pontos",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        69.63,
+        60.58,
+        51.74,
+        43.89,
+        48.92,
+        84.9
+      ],
+      "rank": 1
+    },
+    {
       "key": "c6",
       "label": "C6 Bank · índice de reclamações",
       "unit": "pontos",
@@ -3057,141 +3082,18 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         58.44,
         48.67,
         53.03,
         51.92,
-        55.3
-      ],
-      "rank": 1
-    },
-    {
-      "key": "bradesco",
-      "label": "Bradesco · índice de reclamações",
-      "unit": "pontos",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "metrica": "índice",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        35.89,
-        69.63,
-        60.58,
-        51.74,
-        43.89,
-        48.92
+        55.3,
+        59.77
       ],
       "rank": 2
-    },
-    {
-      "key": "btg+pan",
-      "label": "BTG Pactual / Banco Pan · índice de reclamações",
-      "unit": "pontos",
-      "group": "BTG Pactual / Banco Pan",
-      "tier": "conglomerado",
-      "metrica": "índice",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        36.27,
-        38.32,
-        36.89,
-        32.23,
-        33.67,
-        42.81
-      ],
-      "rank": 3
-    },
-    {
-      "key": "picpay_conglomerado",
-      "label": "PICPAY (conglomerado) · índice de reclamações",
-      "unit": "pontos",
-      "group": "PICPAY (conglomerado)",
-      "tier": "mercado",
-      "metrica": "índice",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        29.03,
-        36.42,
-        40.83,
-        50.06,
-        55.52,
-        37.22
-      ],
-      "rank": 4
-    },
-    {
-      "key": "inter",
-      "label": "Inter · índice de reclamações",
-      "unit": "pontos",
-      "group": "Inter",
-      "tier": "concorrente",
-      "metrica": "índice",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        74.96,
-        62.14,
-        84.87,
-        96.37,
-        39.23,
-        34.86
-      ],
-      "rank": 5
-    },
-    {
-      "key": "santander",
-      "label": "Santander · índice de reclamações",
-      "unit": "pontos",
-      "group": "Santander",
-      "tier": "benchmark",
-      "metrica": "índice",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        33.65,
-        37.5,
-        29.96,
-        29.25,
-        27.29,
-        34.49
-      ],
-      "rank": 6
     },
     {
       "key": "itau",
@@ -3201,45 +3103,47 @@
       "tier": "benchmark",
       "metrica": "índice",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        41.27,
         34.11,
         39.35,
         45.13,
         36.24,
-        34.12
+        34.12,
+        46.87
       ],
-      "rank": 7
+      "rank": 3
     },
     {
-      "key": "neon_pagamentos_ip_conglomerado",
-      "label": "NEON PAGAMENTOS IP (conglomerado) · índice de reclamações",
+      "key": "btg+pan",
+      "label": "BTG Pactual / Banco Pan · índice de reclamações",
       "unit": "pontos",
-      "group": "NEON PAGAMENTOS IP (conglomerado)",
-      "tier": "mercado",
+      "group": "BTG Pactual / Banco Pan",
+      "tier": "conglomerado",
       "metrica": "índice",
       "dates": [
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        27.05,
-        31.75,
-        34.58,
-        39.59,
-        30.55
+        38.32,
+        36.89,
+        32.23,
+        33.67,
+        42.81,
+        41.98
       ],
-      "rank": 8
+      "rank": 4
     },
     {
       "key": "mercado_pago_ip_conglomerado",
@@ -3253,16 +3157,93 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         36.88,
         54.05,
         51.58,
         38.66,
-        30.26
+        30.26,
+        40.81
       ],
-      "rank": 9
+      "rank": 5
+    },
+    {
+      "key": "picpay_conglomerado",
+      "label": "PICPAY (conglomerado) · índice de reclamações",
+      "unit": "pontos",
+      "group": "PICPAY (conglomerado)",
+      "tier": "mercado",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        36.42,
+        40.83,
+        50.06,
+        55.52,
+        37.22,
+        35.66
+      ],
+      "rank": 6
+    },
+    {
+      "key": "santander",
+      "label": "Santander · índice de reclamações",
+      "unit": "pontos",
+      "group": "Santander",
+      "tier": "benchmark",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        37.5,
+        29.96,
+        29.25,
+        27.29,
+        34.49,
+        34.19
+      ],
+      "rank": 7
+    },
+    {
+      "key": "bb_conglomerado",
+      "label": "BB (conglomerado) · índice de reclamações",
+      "unit": "pontos",
+      "group": "BB (conglomerado)",
+      "tier": "mercado",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        20.55,
+        22.2,
+        25.85,
+        16.22,
+        19.36,
+        32.68
+      ],
+      "rank": 8
     },
     {
       "key": "pagseguro_conglomerado",
@@ -3276,14 +3257,41 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         58.84,
         48.47,
         47.31,
         32.09,
-        27.83
+        27.83,
+        28.91
+      ],
+      "rank": 9
+    },
+    {
+      "key": "inter",
+      "label": "Inter · índice de reclamações",
+      "unit": "pontos",
+      "group": "Inter",
+      "tier": "concorrente",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        62.14,
+        84.87,
+        96.37,
+        39.23,
+        34.86,
+        26.15
       ],
       "rank": 10
     },
@@ -3295,45 +3303,45 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        21.33,
         22.91,
         24.82,
         25.87,
         17.23,
-        23.12
+        23.12,
+        23.32
       ],
       "rank": 11
     },
     {
-      "key": "bb_conglomerado",
-      "label": "BB (conglomerado) · índice de reclamações",
+      "key": "neon_pagamentos_ip_conglomerado",
+      "label": "NEON PAGAMENTOS IP (conglomerado) · índice de reclamações",
       "unit": "pontos",
-      "group": "BB (conglomerado)",
+      "group": "NEON PAGAMENTOS IP (conglomerado)",
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        18.17,
-        20.55,
-        22.2,
-        25.85,
-        16.22,
-        19.36
+        27.05,
+        31.75,
+        34.58,
+        39.59,
+        30.55,
+        22.05
       ],
       "rank": 12
     },
@@ -3349,39 +3357,18 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         10.6,
         12.96,
         12.67,
         12.04,
-        10.65
+        10.65,
+        9.2
       ],
       "rank": 13
-    },
-    {
-      "key": "99pay_ip_conglomerado",
-      "label": "99PAY IP (conglomerado) · índice de reclamações",
-      "unit": "pontos",
-      "group": "99PAY IP (conglomerado)",
-      "tier": "mercado",
-      "metrica": "índice",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        33.18,
-        22.74,
-        18.21,
-        16.0,
-        9.51
-      ],
-      "rank": 14
     },
     {
       "key": "cloudwalk_ip_conglomerado",
@@ -3395,14 +3382,41 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         6.32,
         8.32,
         9.55,
         6.43,
-        6.67
+        6.67,
+        7.19
+      ],
+      "rank": 14
+    },
+    {
+      "key": "99pay_ip_conglomerado",
+      "label": "99PAY IP (conglomerado) · índice de reclamações",
+      "unit": "pontos",
+      "group": "99PAY IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "índice",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        33.18,
+        22.74,
+        18.21,
+        16.0,
+        9.51,
+        6.01
       ],
       "rank": 15
     },
@@ -3414,23 +3428,48 @@
       "tier": "concorrente",
       "metrica": "índice",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        88.59,
         107.89,
         138.22,
         108.22,
         139.2,
-        150.52
+        150.52,
+        150.12
       ],
-      "rank": 37,
+      "rank": 39,
       "destaque": true
+    },
+    {
+      "key": "bradesco_volume",
+      "label": "Bradesco · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Bradesco",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        7647,
+        6672,
+        5718,
+        4849,
+        5398,
+        9375
+      ],
+      "rank": 1
     },
     {
       "key": "c6_volume",
@@ -3444,141 +3483,18 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         1858,
         1562,
         1726,
         1738,
-        1898
-      ],
-      "rank": 1
-    },
-    {
-      "key": "bradesco_volume",
-      "label": "Bradesco · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "Bradesco",
-      "tier": "benchmark",
-      "metrica": "volume",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        3917,
-        7647,
-        6672,
-        5718,
-        4849,
-        5398
+        1898,
+        2103
       ],
       "rank": 2
-    },
-    {
-      "key": "btg+pan_volume",
-      "label": "BTG Pactual / Banco Pan · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "BTG Pactual / Banco Pan",
-      "tier": "conglomerado",
-      "metrica": "volume",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        932,
-        1001,
-        967,
-        857,
-        901,
-        1173
-      ],
-      "rank": 3
-    },
-    {
-      "key": "picpay_conglomerado_volume",
-      "label": "PICPAY (conglomerado) · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "PICPAY (conglomerado)",
-      "tier": "mercado",
-      "metrica": "volume",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        1748,
-        2265,
-        2610,
-        3286,
-        3718,
-        2563
-      ],
-      "rank": 4
-    },
-    {
-      "key": "inter_volume",
-      "label": "Inter · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "Inter",
-      "tier": "concorrente",
-      "metrica": "volume",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        2634,
-        2272,
-        3239,
-        3862,
-        1647,
-        1506
-      ],
-      "rank": 5
-    },
-    {
-      "key": "santander_volume",
-      "label": "Santander · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "Santander",
-      "tier": "benchmark",
-      "metrica": "volume",
-      "dates": [
-        "4Q24",
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        2317,
-        2556,
-        2063,
-        2038,
-        1929,
-        2471
-      ],
-      "rank": 6
     },
     {
       "key": "itau_volume",
@@ -3588,45 +3504,47 @@
       "tier": "benchmark",
       "metrica": "volume",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        4066,
         3384,
         3933,
         4525,
         3636,
-        3442
+        3442,
+        4596
       ],
-      "rank": 7
+      "rank": 3
     },
     {
-      "key": "neon_pagamentos_ip_conglomerado_volume",
-      "label": "NEON PAGAMENTOS IP (conglomerado) · reclamações procedentes",
+      "key": "btg+pan_volume",
+      "label": "BTG Pactual / Banco Pan · reclamações procedentes",
       "unit": "reclamações",
-      "group": "NEON PAGAMENTOS IP (conglomerado)",
-      "tier": "mercado",
+      "group": "BTG Pactual / Banco Pan",
+      "tier": "conglomerado",
       "metrica": "volume",
       "dates": [
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        703,
-        837,
-        903,
-        1031,
-        817
+        1001,
+        967,
+        857,
+        901,
+        1173,
+        1168
       ],
-      "rank": 8
+      "rank": 4
     },
     {
       "key": "mercado_pago_ip_conglomerado_volume",
@@ -3640,16 +3558,93 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         2309,
         3396,
         3414,
         2661,
-        2157
+        2157,
+        3048
       ],
-      "rank": 9
+      "rank": 5
+    },
+    {
+      "key": "picpay_conglomerado_volume",
+      "label": "PICPAY (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "PICPAY (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        2265,
+        2610,
+        3286,
+        3718,
+        2563,
+        2518
+      ],
+      "rank": 6
+    },
+    {
+      "key": "santander_volume",
+      "label": "Santander · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Santander",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        2556,
+        2063,
+        2038,
+        1929,
+        2471,
+        2472
+      ],
+      "rank": 7
+    },
+    {
+      "key": "bb_conglomerado_volume",
+      "label": "BB (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "BB (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        1617,
+        1776,
+        2091,
+        1330,
+        1608,
+        2748
+      ],
+      "rank": 8
     },
     {
       "key": "pagseguro_conglomerado_volume",
@@ -3663,14 +3658,41 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         1885,
         1602,
         1595,
         1090,
-        944
+        944,
+        985
+      ],
+      "rank": 9
+    },
+    {
+      "key": "inter_volume",
+      "label": "Inter · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Inter",
+      "tier": "concorrente",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        2272,
+        3239,
+        3862,
+        1647,
+        1506,
+        1163
       ],
       "rank": 10
     },
@@ -3682,45 +3704,45 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        3289,
         3546,
         3894,
         4075,
         2724,
-        3659
+        3659,
+        3737
       ],
       "rank": 11
     },
     {
-      "key": "bb_conglomerado_volume",
-      "label": "BB (conglomerado) · reclamações procedentes",
+      "key": "neon_pagamentos_ip_conglomerado_volume",
+      "label": "NEON PAGAMENTOS IP (conglomerado) · reclamações procedentes",
       "unit": "reclamações",
-      "group": "BB (conglomerado)",
+      "group": "NEON PAGAMENTOS IP (conglomerado)",
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        1419,
-        1617,
-        1776,
-        2091,
-        1330,
-        1608
+        703,
+        837,
+        903,
+        1031,
+        817,
+        603
       ],
       "rank": 12
     },
@@ -3736,39 +3758,18 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         1100,
         1381,
         1386,
         1350,
-        1223
+        1223,
+        1080
       ],
       "rank": 13
-    },
-    {
-      "key": "99pay_ip_conglomerado_volume",
-      "label": "99PAY IP (conglomerado) · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "99PAY IP (conglomerado)",
-      "tier": "mercado",
-      "metrica": "volume",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26"
-      ],
-      "values": [
-        759,
-        540,
-        453,
-        418,
-        260
-      ],
-      "rank": 14
     },
     {
       "key": "cloudwalk_ip_conglomerado_volume",
@@ -3782,14 +3783,41 @@
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
         65,
         97,
         135,
         102,
-        121
+        121,
+        147
+      ],
+      "rank": 14
+    },
+    {
+      "key": "99pay_ip_conglomerado_volume",
+      "label": "99PAY IP (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "99PAY IP (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "1Q25",
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26"
+      ],
+      "values": [
+        759,
+        540,
+        453,
+        418,
+        260,
+        170
       ],
       "rank": 15
     },
@@ -3801,22 +3829,22 @@
       "tier": "concorrente",
       "metrica": "volume",
       "dates": [
-        "4Q24",
         "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
-        "1Q26"
+        "1Q26",
+        "2Q26"
       ],
       "values": [
-        285,
         353,
         442,
         355,
         472,
-        529
+        529,
+        545
       ],
-      "rank": 37,
+      "rank": 39,
       "destaque": true
     }
   ]
