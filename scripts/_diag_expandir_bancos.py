@@ -48,4 +48,24 @@ for banco_key in BANCOS_NOVOS:
         saldo = row["Saldo"] / 1e9
         venc_row = venc[venc["AnoMes"] == anomes]
         venc_val = venc_row["Saldo"].iloc[0] / 1e9 if not venc_row.empty else None
-        print(f"[diag2]   {anomes}: saldo_total_bi={saldo:.4f} vencido15d_bi={venc_val}")
+        cod = row.get("CodInst_limpo")
+        conta = row.get("Conta")
+        print(f"[diag2]   {anomes}: saldo_total_bi={saldo:.4f} vencido15d_bi={venc_val} CodInst_limpo={cod} Conta={conta}")
+
+    # Diagnóstico extra: se o valor pular entre trimestres, provavelmente é
+    # porque o "Total" de trimestres diferentes veio de um CodInst_limpo
+    # diferente (código individual vs código de conglomerado apontando pra
+    # escopos diferentes, mesmo padrão do bug já resolvido nesse projeto
+    # antes) - mostra TODOS os CodInst_limpo distintos que contribuíram pro
+    # 'Total' desse banco, não só o que "ganhou" cada trimestre.
+    if banco_key == "caixa" and "CodInst_limpo" in sub.columns:
+        print(f"[diag2]   >>> códigos distintos que contribuíram pro Total do '{banco_key}': "
+              f"{sorted(total['CodInst_limpo'].unique().tolist())}")
+        # e o que CADA código reportou em CADA trimestre, mesmo o que não "ganhou"
+        # (recalcula direto do df bruto retornado por get_ifdata_cartao, filtrando
+        # só por CodInst_limpo em vez de por NomeInstituicao já mapeado)
+        codigos = sorted(total["CodInst_limpo"].unique().tolist())
+        for cod in codigos:
+            linhas_cod = df[(df["CodInst_limpo"] == cod) & (df["NomeColuna"] == "Total")].sort_values("AnoMes")
+            vals = [(int(r["AnoMes"]), round(r["Saldo"] / 1e9, 4)) for _, r in linhas_cod.iterrows()]
+            print(f"[diag2]     CodInst_limpo={cod}: {vals}")
