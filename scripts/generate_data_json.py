@@ -594,3 +594,8 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+    if os.environ.get("RODAR_DIAG_SEGMENTO"):
+        print("\n[diag] === RODAR_DIAG_SEGMENTO ativo - rodando scripts/_diag_segmento.py ===")
+        import runpy
+        runpy.run_path(str(Path(__file__).parent / "_diag_segmento.py"), run_name="__main__")
