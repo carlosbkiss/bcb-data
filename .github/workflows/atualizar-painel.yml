@@ -27,7 +27,7 @@ jobs:
         run: python scripts/generate_data_json.py
         env:
           DEBUG_BCB: "1"
-          RODAR_DIAG_SEGMENTO: "1"
+          RODAR_DIAG_EXPANDIR: "1"
 
 
       - name: Commitar data.json atualizado no main
