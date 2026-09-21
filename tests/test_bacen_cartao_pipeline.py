@@ -22,6 +22,16 @@ def test_termo_curto_nao_bate_em_nome_nao_relacionado():
     assert pd.Series(["BANCO INTER S.A."]).str.contains(padrao, case=False).iloc[0]
 
 
+def test_identificar_bancos_alvo_bv_bate_no_nome_agregado_do_conglomerado():
+    # Bug real: o BV nunca aparecia no Ranking de Reclamações porque lá ele
+    # é publicado agregado como "VOTORANTIM (conglomerado)" - sem "BANCO"
+    # nem "BV" no nome, então nenhum termo configurado batia.
+    assert p.identificar_bancos_alvo("VOTORANTIM (conglomerado)") == ["bv"]
+    # incluir_curtos=False (usado pelo IF.data) não deve bater - "VOTORANTIM"
+    # sozinho só é seguro na lista curada do Ranking de Reclamações.
+    assert p.identificar_bancos_alvo("VOTORANTIM (conglomerado)", incluir_curtos=False) == []
+
+
 def test_identificar_bancos_alvo_conglomerado_btg_pan():
     # Uma linha só que junta dois bancos-alvo (BTG comprou o Pan) precisa
     # retornar AMBOS, não só o primeiro que bater.
