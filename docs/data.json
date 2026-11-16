@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-11-09T21:48:15.501042+00:00",
+  "updated_at": "2026-11-16T21:31:27.173350+00:00",
   "sgs": [
     {
       "key": "inadimplencia_total_sfn",
@@ -3145,20 +3145,20 @@
       "tier": "benchmark",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        69.63,
         60.58,
         51.74,
         43.89,
         48.92,
-        84.9
+        84.9,
+        57.23
       ],
       "rank": 1
     },
@@ -3170,20 +3170,20 @@
       "tier": "concorrente",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        58.44,
         48.67,
         53.03,
         51.92,
         55.3,
-        59.77
+        59.77,
+        52.31
       ],
       "rank": 2
     },
@@ -3195,20 +3195,20 @@
       "tier": "benchmark",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        34.11,
         39.35,
         45.13,
         36.24,
         34.12,
-        46.87
+        46.87,
+        43.2
       ],
       "rank": 3
     },
@@ -3220,47 +3220,22 @@
       "tier": "conglomerado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        38.32,
         36.89,
         32.23,
         33.67,
         42.81,
-        41.98
+        41.98,
+        40.6
       ],
       "rank": 4
-    },
-    {
-      "key": "mercado_pago_ip_conglomerado",
-      "label": "MERCADO PAGO IP (conglomerado) · índice de reclamações",
-      "unit": "pontos",
-      "group": "MERCADO PAGO IP (conglomerado)",
-      "tier": "mercado",
-      "metrica": "índice",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26",
-        "2Q26"
-      ],
-      "values": [
-        36.88,
-        54.05,
-        51.58,
-        38.66,
-        30.26,
-        40.81
-      ],
-      "rank": 5
     },
     {
       "key": "picpay_conglomerado",
@@ -3270,47 +3245,47 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        36.42,
         40.83,
         50.06,
         55.52,
         37.22,
-        35.66
+        35.66,
+        35.51
       ],
-      "rank": 6
+      "rank": 5
     },
     {
-      "key": "santander",
-      "label": "Santander · índice de reclamações",
+      "key": "mercado_pago_ip_conglomerado",
+      "label": "MERCADO PAGO IP (conglomerado) · índice de reclamações",
       "unit": "pontos",
-      "group": "Santander",
-      "tier": "benchmark",
+      "group": "MERCADO PAGO IP (conglomerado)",
+      "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        37.5,
-        29.96,
-        29.25,
-        27.29,
-        34.49,
-        34.19
+        54.05,
+        51.58,
+        38.66,
+        30.26,
+        40.81,
+        30.57
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "key": "bb_conglomerado",
@@ -3320,20 +3295,45 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        20.55,
         22.2,
         25.85,
         16.22,
         19.36,
-        32.68
+        32.68,
+        29.94
+      ],
+      "rank": 7
+    },
+    {
+      "key": "santander",
+      "label": "Santander · índice de reclamações",
+      "unit": "pontos",
+      "group": "Santander",
+      "tier": "benchmark",
+      "metrica": "índice",
+      "dates": [
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26",
+        "3Q26"
+      ],
+      "values": [
+        29.96,
+        29.25,
+        27.29,
+        34.49,
+        34.19,
+        29.75
       ],
       "rank": 8
     },
@@ -3345,20 +3345,20 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        58.84,
         48.47,
         47.31,
         32.09,
         27.83,
-        28.91
+        28.91,
+        28.52
       ],
       "rank": 9
     },
@@ -3370,47 +3370,22 @@
       "tier": "concorrente",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        62.14,
         84.87,
         96.37,
         39.23,
         34.86,
-        26.15
+        26.15,
+        18.45
       ],
       "rank": 10
-    },
-    {
-      "key": "caixa_econ_mica_federal_conglomerado",
-      "label": "CAIXA ECONÔMICA FEDERAL (conglomerado) · índice de reclamações",
-      "unit": "pontos",
-      "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
-      "tier": "mercado",
-      "metrica": "índice",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26",
-        "2Q26"
-      ],
-      "values": [
-        22.91,
-        24.82,
-        25.87,
-        17.23,
-        23.12,
-        23.32
-      ],
-      "rank": 11
     },
     {
       "key": "neon_pagamentos_ip_conglomerado",
@@ -3420,20 +3395,45 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        27.05,
         31.75,
         34.58,
         39.59,
         30.55,
-        22.05
+        22.05,
+        18.02
+      ],
+      "rank": 11
+    },
+    {
+      "key": "caixa_econ_mica_federal_conglomerado",
+      "label": "CAIXA ECONÔMICA FEDERAL (conglomerado) · índice de reclamações",
+      "unit": "pontos",
+      "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
+      "tier": "mercado",
+      "metrica": "índice",
+      "dates": [
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26",
+        "3Q26"
+      ],
+      "values": [
+        24.82,
+        25.87,
+        17.23,
+        23.12,
+        23.32,
+        17.15
       ],
       "rank": 12
     },
@@ -3445,20 +3445,20 @@
       "tier": "benchmark",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        10.6,
         12.96,
         12.67,
         12.04,
         10.65,
-        9.2
+        9.2,
+        10.68
       ],
       "rank": 13
     },
@@ -3470,20 +3470,20 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        6.32,
         8.32,
         9.55,
         6.43,
         6.67,
-        7.19
+        7.19,
+        10.12
       ],
       "rank": 14
     },
@@ -3495,20 +3495,20 @@
       "tier": "mercado",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        33.18,
         22.74,
         18.21,
         16.0,
         9.51,
-        6.01
+        6.01,
+        5.98
       ],
       "rank": 15
     },
@@ -3520,22 +3520,22 @@
       "tier": "concorrente",
       "metrica": "índice",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        107.89,
         138.22,
         108.22,
         139.2,
         150.52,
-        150.12
+        150.12,
+        149.78
       ],
-      "rank": 39,
+      "rank": 38,
       "destaque": true
     },
     {
@@ -3546,20 +3546,20 @@
       "tier": "benchmark",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        7647,
         6672,
         5718,
         4849,
         5398,
-        9375
+        9375,
+        6333
       ],
       "rank": 1
     },
@@ -3571,20 +3571,20 @@
       "tier": "concorrente",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        1858,
         1562,
         1726,
         1738,
         1898,
-        2103
+        2103,
+        1893
       ],
       "rank": 2
     },
@@ -3596,20 +3596,20 @@
       "tier": "benchmark",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        3384,
         3933,
         4525,
         3636,
         3442,
-        4596
+        4596,
+        4252
       ],
       "rank": 3
     },
@@ -3621,47 +3621,22 @@
       "tier": "conglomerado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        1001,
         967,
         857,
         901,
         1173,
-        1168
+        1168,
+        1127
       ],
       "rank": 4
-    },
-    {
-      "key": "mercado_pago_ip_conglomerado_volume",
-      "label": "MERCADO PAGO IP (conglomerado) · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "MERCADO PAGO IP (conglomerado)",
-      "tier": "mercado",
-      "metrica": "volume",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26",
-        "2Q26"
-      ],
-      "values": [
-        2309,
-        3396,
-        3414,
-        2661,
-        2157,
-        3048
-      ],
-      "rank": 5
     },
     {
       "key": "picpay_conglomerado_volume",
@@ -3671,47 +3646,47 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        2265,
         2610,
         3286,
         3718,
         2563,
-        2518
+        2518,
+        2564
       ],
-      "rank": 6
+      "rank": 5
     },
     {
-      "key": "santander_volume",
-      "label": "Santander · reclamações procedentes",
+      "key": "mercado_pago_ip_conglomerado_volume",
+      "label": "MERCADO PAGO IP (conglomerado) · reclamações procedentes",
       "unit": "reclamações",
-      "group": "Santander",
-      "tier": "benchmark",
+      "group": "MERCADO PAGO IP (conglomerado)",
+      "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        2556,
-        2063,
-        2038,
-        1929,
-        2471,
-        2472
+        3396,
+        3414,
+        2661,
+        2157,
+        3048,
+        2370
       ],
-      "rank": 7
+      "rank": 6
     },
     {
       "key": "bb_conglomerado_volume",
@@ -3721,20 +3696,45 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        1617,
         1776,
         2091,
         1330,
         1608,
-        2748
+        2748,
+        2547
+      ],
+      "rank": 7
+    },
+    {
+      "key": "santander_volume",
+      "label": "Santander · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "Santander",
+      "tier": "benchmark",
+      "metrica": "volume",
+      "dates": [
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26",
+        "3Q26"
+      ],
+      "values": [
+        2063,
+        2038,
+        1929,
+        2471,
+        2472,
+        2169
       ],
       "rank": 8
     },
@@ -3746,20 +3746,20 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        1885,
         1602,
         1595,
         1090,
         944,
-        985
+        985,
+        959
       ],
       "rank": 9
     },
@@ -3771,47 +3771,22 @@
       "tier": "concorrente",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        2272,
         3239,
         3862,
         1647,
         1506,
-        1163
+        1163,
+        848
       ],
       "rank": 10
-    },
-    {
-      "key": "caixa_econ_mica_federal_conglomerado_volume",
-      "label": "CAIXA ECONÔMICA FEDERAL (conglomerado) · reclamações procedentes",
-      "unit": "reclamações",
-      "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
-      "tier": "mercado",
-      "metrica": "volume",
-      "dates": [
-        "1Q25",
-        "2Q25",
-        "3Q25",
-        "4Q25",
-        "1Q26",
-        "2Q26"
-      ],
-      "values": [
-        3546,
-        3894,
-        4075,
-        2724,
-        3659,
-        3737
-      ],
-      "rank": 11
     },
     {
       "key": "neon_pagamentos_ip_conglomerado_volume",
@@ -3821,20 +3796,45 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        703,
         837,
         903,
         1031,
         817,
-        603
+        603,
+        502
+      ],
+      "rank": 11
+    },
+    {
+      "key": "caixa_econ_mica_federal_conglomerado_volume",
+      "label": "CAIXA ECONÔMICA FEDERAL (conglomerado) · reclamações procedentes",
+      "unit": "reclamações",
+      "group": "CAIXA ECONÔMICA FEDERAL (conglomerado)",
+      "tier": "mercado",
+      "metrica": "volume",
+      "dates": [
+        "2Q25",
+        "3Q25",
+        "4Q25",
+        "1Q26",
+        "2Q26",
+        "3Q26"
+      ],
+      "values": [
+        3894,
+        4075,
+        2724,
+        3659,
+        3737,
+        2761
       ],
       "rank": 12
     },
@@ -3846,20 +3846,20 @@
       "tier": "benchmark",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        1100,
         1381,
         1386,
         1350,
         1223,
-        1080
+        1080,
+        1278
       ],
       "rank": 13
     },
@@ -3871,20 +3871,20 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        65,
         97,
         135,
         102,
         121,
-        147
+        147,
+        229
       ],
       "rank": 14
     },
@@ -3896,20 +3896,20 @@
       "tier": "mercado",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        759,
         540,
         453,
         418,
         260,
-        170
+        170,
+        176
       ],
       "rank": 15
     },
@@ -3921,22 +3921,22 @@
       "tier": "concorrente",
       "metrica": "volume",
       "dates": [
-        "1Q25",
         "2Q25",
         "3Q25",
         "4Q25",
         "1Q26",
-        "2Q26"
+        "2Q26",
+        "3Q26"
       ],
       "values": [
-        353,
         442,
         355,
         472,
         529,
-        545
+        545,
+        555
       ],
-      "rank": 39,
+      "rank": 38,
       "destaque": true
     }
   ]
